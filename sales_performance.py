@@ -7,8 +7,6 @@ import seaborn as sns
 
 df = pd.read_csv('SuperStore_Sales_Dataset.csv', encoding='utf-8')
 
-# Initial exploration
-
 print("Dataset Shape:", df.shape)
 print("\nFirst 5 rows:")
 print(df.head())
@@ -20,7 +18,7 @@ print("\nBasic Statistics:")
 print(df.describe())
 
 
-# Data Cleaning and preprocessing
+# Data Cleaning \
 
 df['Order Date'] = pd.to_datetime(df['Order Date'], format='%d-%m-%Y')
 df['Ship Date'] = pd.to_datetime(df['Ship Date'], format='%d-%m-%Y')
